@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Roads iNdhlela (Pvt) Ltd | Car Rentals Zimbabwe</title>
+  <style>
+    html { scroll-behavior: smooth; }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: "Times New Roman", serif; }
+    body { background: #f4f6f8; color: #222; }
+
+    nav {
+      background: #0b0b0b;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav h1 { font-size: 1.8rem; }
+    nav a { color: #fff; margin-left: 1.5rem; }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)), url('images/bmw-m3.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+    header h2 { font-size: 3rem; margin-bottom: 1rem; }
+
+    section { padding: 3rem 2rem; }
+    .title { text-align: center; font-size: 2.3rem; margin-bottom: 2rem; }
+
+    .fleet {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.8rem;
+    }
+    .car {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,.1);
+      transition: .3s;
+      cursor: pointer;
+    }
+    .car:hover { transform: translateY(-6px); }
+    .car img { width: 100%; height: 180px; object-fit: cover; }
+    .car div { padding: 1.2rem; }
+    .price { color: #8b0000; font-size: 1.3rem; font-weight: bold; }
+
+    .car-details {
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,.1);
+      margin-bottom: 3rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .gallery img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .wa-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: .8rem 1.4rem;
+      background: #25D366;
+      color: #fff;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .wa-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #25D366;
+      color: #fff;
+      padding: 1rem 1.4rem;
+      border-radius: 50px;
+      font-weight: bold;
+      box-shadow: 0 5px 15px rgba(0,0,0,.3);
+      z-index: 200;
+    }
+
+    footer {
+      background: #0b0b0b;
+      color: #ddd;
+      text-align: center;
+      padding: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h1>All Roads iNdhlela (Pvt) Ltd</h1>
+  <div>
+    <a href="#fleet">Fleet</a>
+    <a href="#terms">Terms</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header>
+  <div>
+    <h2>Premium & Reliable Car Hire</h2>
+    <p>Serving Zimbabwe with Comfort & Class</p>
+  </div>
+</header>
+
+<section id="fleet">
+  <h2 class="title">Our Fleet</h2>
+  <div class="fleet">
+    <a href="#fortuner" class="car"><img src="images/fortuner/front.jpg"><div><h3>Toyota Fortuner GD6</h3><p class="price">$150 / day</p></div></a>
+    <a href="#note" class="car"><img src="images/note/front.jpg"><div><h3>Nissan Note</h3><p class="price">$40 / day</p></div></a>
+    <a href="#axio" class="car"><img src="images/axio/front.jpg"><div><h3>Toyota Axio</h3><p class="price">$50 / day</p></div></a>
+    <a href="#hiace" class="car"><img src="images/hiace/front.jpg"><div><h3>Toyota Hiace 2017</h3><p class="price">$110 / day</p></div></a>
+    <a href="#cx5" class="car"><img src="images/cx5/front.jpg"><div><h3>Mazda CX‑5</h3><p class="price">$75 / day</p></div></a>
+    <a href="#hilux" class="car"><img src="images/hilux/front.jpg"><div><h3>Toyota Hilux GD6</h3><p class="price">$150 / day</p></div></a>
+  </div>
+</section>
+
+<section id="fortuner" class="car-details">
+  <h2>Toyota Fortuner GD6</h2>
+  <p><strong>Price:</strong> $150 per day</p>
+  <div class="gallery">
+    <img src="images/fortuner/front.jpg">
+    <img src="images/fortuner/side.jpg">
+    <img src="images/fortuner/rear.jpg">
+    <img src="images/fortuner/interior.jpg">
+  </div>
+  <a class="wa-btn" href="https://wa.me/263782869415?text=I%20want%20to%20book%20the%20Toyota%20Fortuner%20GD6">Book via WhatsApp</a>
+</section>
+
+<section id="note" class="car-details">
+  <h2>Nissan Note</h2>
+  <p><strong>Price:</strong> $40 per day</p>
+  <div class="gallery">
+    <img src="images/note/front.jpg">
+    <img src="images/note/side.jpg">
+    <img src="images/note/rear.jpg">
+    <img src="images/note/interior.jpg">
+  </div>
+  <a class="wa-btn" href="https://wa.me/263782869415?text=I%20want%20to%20book%20the%20Nissan%20Note">Book via WhatsApp</a>
+</section>
+
+<section id="axio" class="car-details">
+  <h2>Toyota Axio</h2>
+  <p><strong>Price:</strong> $50 per day</p>
+  <div class="gallery">
+    <img src="images/axio/front.jpg">
+    <img src="images/axio/side.jpg">
+    <img src="images/axio/rear.jpg">
+    <img src="images/axio/interior.jpg">
+  </div>
+  <a class="wa-btn" href="https://wa.me/263782869415?text=I%20want%20to%20book%20the%20Toyota%20Axio">Book via WhatsApp</a>
+</section>
+
+<section id="hiace" class="car-details">
+  <h2>Toyota Hiace 2017</h2>
+  <p><strong>Price:</strong> $110 per day</p>
+  <div class="gallery">
+    <img src="images/hiace/front.jpg">
+    <img src="images/hiace/side.jpg">
+    <img src="images/hiace/rear.jpg">
+    <img src="images/hiace/interior.jpg">
+  </div>
+  <a class="wa-btn" href="https://wa.me/263782869415?text=I%20want%20to%20book%20the%20Toyota%20Hiace%202017">Book via WhatsApp</a>
+</section>
+
+<section id="cx5" class="car-details">
+  <h2>Mazda CX-5</h2>
+  <p><strong>Price:</strong> $75 per day</p>
+  <div class="gallery">
+    <img src="images/cx5/front.jpg">
+    <img src="images/cx5/side.jpg">
+    <img src="images/cx5/rear.jpg">
+    <img src="images/cx5/interior.jpg">
+  </div>
+  <a class="wa-btn" href="https://wa.me/263782869415?text=I%20want%20to%20book%20the%20Mazda%20CX-5">Book via WhatsApp</a>
+</section>
+
+<section id="hilux" class="car-details">
+  <h2>Toyota Hilux GD6</h2>
+  <p><strong>Price:</strong> $150 per day</p>
+  <div class="gallery">
+    <img src="images/hilux/front.jpg">
+    <img src="images/hilux/side.jpg">
+    <img src="images/hilux/rear.jpg">
+    <img src="images/hilux/interior.jpg">
+  </div>
+  <a class="wa-btn" href="https://wa.me/263782869415?text=I%20want%20to%20book%20the%20Toyota%20Hilux%20GD6">Book via WhatsApp</a>
+</section>
+
+<section id="terms" class="car-details">
+  <h2>Rental Terms & Conditions</h2>
+  <p>• Valid driver’s license required</p>
+  <p>• Security deposit required</p>
+  <p>• Fuel returned same level</p>
+  <p>• Late return penalties apply</p>
+</section>
+
+<section id="contact" class="car-details">
+  <h2>Contact Us</h2>
+  <p><strong>Phone:</strong> +263 78 286 9415</p>
+  <p><strong>Email:</strong> info@allroadsindhlela.co.zw</p>
+  <p><strong>Location:</strong> Harare, Zimbabwe</p>
+</section>
+
+<a class="wa-float" href="https://wa.me/263782869415" target="_blank">WhatsApp</a>
+
+<footer>
+  <p>© 2025 All Roads iNdhlela (Pvt) Ltd</p>
+  <p>© 2025 Tecca Publishing & Co inc.</p>
+</footer>
+
+</body>
+</html>
